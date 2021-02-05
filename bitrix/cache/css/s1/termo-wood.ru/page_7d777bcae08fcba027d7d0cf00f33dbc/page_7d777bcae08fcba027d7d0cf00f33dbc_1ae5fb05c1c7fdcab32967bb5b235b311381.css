@@ -1,0 +1,54 @@
+
+
+
+/* Start:/bitrix/templates/termo-wood.ru/components/bitrix/news.list/index_project_mobile/style.css*/
+.pictures {
+	display: flex;
+    flex-flow: row wrap;
+    align-items: baseline;
+}
+
+.pictures-project {
+    position: relative;
+	display: flex;
+    flex: 0 1 auto;
+}
+#owl-mainpage-pictures{display:none}
+
+	article .index-menu{    margin: 20px auto -20px;}
+
+@media (max-width: 480px) {
+		article .index-menu{    margin: 20px auto 20px;}
+	#owl-mainpage-pictures{display:block}
+	#owl-mainpage-pictures .owl-nav button {  top: -115px;}
+	.pictures {
+		justify-content: center;
+	}
+}
+
+/* End */
+
+
+
+/* Start:/bitrix/templates/termo-wood.ru/components/bitrix/news.list/index_project/style.css*/
+.pictures {
+	display: flex;
+    flex-flow: row wrap;
+    align-items: baseline;
+}
+
+.pictures-project {
+    position: relative;
+	display: flex;
+    flex: 0 1 auto;
+}
+
+@media (max-width: 480px) {
+	.pictures {
+		justify-content: center;
+	}
+}
+
+/* End */
+/* /bitrix/templates/termo-wood.ru/components/bitrix/news.list/index_project_mobile/style.css */
+/* /bitrix/templates/termo-wood.ru/components/bitrix/news.list/index_project/style.css */

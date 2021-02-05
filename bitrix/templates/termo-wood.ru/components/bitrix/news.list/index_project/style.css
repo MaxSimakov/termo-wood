@@ -1,0 +1,17 @@
+.pictures {
+	display: flex;
+    flex-flow: row wrap;
+    align-items: baseline;
+}
+
+.pictures-project {
+    position: relative;
+	display: flex;
+    flex: 0 1 auto;
+}
+
+@media (max-width: 480px) {
+	.pictures {
+		justify-content: center;
+	}
+}
