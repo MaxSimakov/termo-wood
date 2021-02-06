@@ -349,6 +349,10 @@ body {
 		.owl-item {
 			float: none;
 			height: auto;
+			.catalog-item {
+				margin-bottom: 0;
+			}
+
 			.catalog-item-info {
 				margin-bottom: 0;
 			}
@@ -361,7 +365,7 @@ body {
 		.catalog-item a, .catalog-item {
 			height: 100%;
 			display: flex;
-			flex-direction: column;
+			flex-direction: column;			
 		}
 	}
 
