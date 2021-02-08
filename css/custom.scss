@@ -6,7 +6,7 @@ $primary: #4EAF30;
 	color: $primary !important;
 }
 
-body {	
+body {
 
 	.main-wrapper {
 		width: 100%;
@@ -15,9 +15,17 @@ body {
 	}
 
 	.mobile-d-none {
-		@media screen and (max-width: 600px) {
-			display: none;
+		@media screen and (max-width: 599.98px) {
+			display: none !important;
 		}
+	}
+
+	.mb-0 {
+		margin-bottom: 0;
+	}
+
+	.mt-0 {
+		margin-top: 0;
 	}
 
 	.deck-d-none {
@@ -26,22 +34,12 @@ body {
 		}
 	}
 
-	.price-tech {
-		@media screen and (max-width: 600px) {
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			margin-bottom: 20px;
-			.download {
-				margin: 0;
-				.texosmotr, .price-list {
-					background-position: left;
-					padding: 10px 10px 9px 35px;
-					font-size: 12px;
-				}
-			}
-		}
+	.upper {
+		text-transform: uppercase;
 	}
+
+	
+	
 
 	@media screen and (max-width: 800px) {
 		.index-menu {
@@ -69,12 +67,8 @@ body {
 					max-width: 231px;
 					margin: 0 auto;
 					text-align: center;
-
-					// font-family: Roboto;
-					// font-style: normal;
 					font-weight: 300;
 					font-size: 12px;
-					// line-height: 14px;
 				}
 
 				a {
@@ -122,15 +116,9 @@ body {
 		#owl-mainpage-pictures {
 			display: block;
 		}
-	}
-
-	@media screen and (max-width: 600px) {
 		.pictures {
 			display: none;
 		}
-	}
-
-	@media screen and (max-width: 600px) {
 		.header-row .footer-phones-items .footer-phone {
 			display: none;
 		}
@@ -138,7 +126,7 @@ body {
 
 	@media screen and (min-width: 600px) {
 		.header-row .footer-phones-items .header-phone-mobile,
-		.header-row .footer-phones-items .timetable  {
+		.header-row .footer-phones-items .timetable {
 			display: none;
 		}
 	}
@@ -175,92 +163,7 @@ body {
 
 	@media screen and (max-width: 600px) {
 
-		.mainMenu__mobile {
-			top: 0px;
-			right: 0px;
-			padding: 15px;
-			margin: 0;
-			&.active {
-				background-color: #E1E1E1;
-			}
-			svg {
-				width: 33px;
-				height: 26px;
-			}
-		}
-
-		.header-row .footer-phones {
-			left: 25px;
-			top: 0;
-		}
-
-		.footer-phones-items {
-			align-items: flex-end;
-
-			.header-phone-mobile {
-				font-weight: 900;
-				font-size: 12px;
-				line-height: 12px;
-				text-align: right;
-				color: #1d2021;
-			}
-			.timetable {
-				font-style: normal;
-				font-weight: 300;
-				font-size: 10px;
-				line-height: 14px;
-				text-align: right;
-			}
-		}
-		.header-row {
-			justify-content: flex-start;
-			height: 60px;
-		}
-		.header-logo {
-			top: 0;
-			max-width: 116px;
-			padding-left: 5px;
-		}
-		.index-menu {
-			margin: 0;
-			padding-top: 7px;
-		}
 		
-		.owl-mobilemain.owl-carousel {
-			width: 100% !important;
-			max-width: 100%;
-			@media screen and (max-width: 450px) {
-				.p-info-name {
-					font-family: Roboto;
-					font-weight: 900;
-					font-size: 14px;
-					line-height: 16px;
-				}
-				.p-info-text {
-					font-family: Roboto;
-					font-weight: 500;
-					font-size: 12px;
-					line-height: 16px;
-				}
-			}
-		}
-
-		.pictures-project>.p-item-info {
-			position: absolute;
-			flex-direction: column;
-			background: #00000096;
-			width: 100%;
-			height: auto !important;
-			bottom: 0;
-			top: auto !important;
-			align-items: end;
-			justify-content: flex-start;
-			padding: 3px 6px 3px 17px !important;
-			box-sizing: border-box;
-			line-height: 30px;
-			display: flex;
-			align-content: flex-start;
-		}
 	}
 
 	@media screen and (max-width: 454px) {
@@ -272,14 +175,14 @@ body {
 		.footer-phones {
 			margin: 0;
 			padding-bottom: 0;
-		}	
+		}
 	}
 
 	@media screen and (max-width: 1024px) {
 		.header-row .header-phone {
 			display: none;
 		}
-	}	
+	}
 
 	.owl-mobilemain .pictures-project {
 		@include block(320px/160px);
@@ -308,41 +211,16 @@ body {
 		&.active {
 			background-color: $primary;
 		}
-	}
-
-	@media screen and (max-width: 600px) {
-		.article-text .owl-carousel {
-			.owl-nav {
-				--w: 23px;
-				--position: calc((50% - 50vw) + var(--w) / 2 - 4px);
-				.owl-prev, .owl-next { 
-					width: var(--w);
-					height: calc(var(--w) * 2);
-					background-color: rgba($color: #C4C4C4, $alpha: 0.8) !important;
-					background-repeat: no-repeat;
-					background-size: 13px 21px;
-				}
-
-				.owl-prev {
-					left: var(--position);
-					border-radius: 0 var(--w) var(--w) 0;
-					background-image: url(../upload/shevron-left.svg) !important;
-					background-position: 2px center !important;
-				}
-				.owl-next {
-					right: var(--position);
-					border-radius: var(--w) 0 0 var(--w);
-					background-image: url(../upload/shevron-right.svg) !important;
-					background-position: calc(100% - 2px) center !important;
-				}
-			}
-		}
-  }
-
-	.article-text .owl-carousel .owl-stage-outer {
+	}	
+	#owl-profil .owl-stage-outer {
 		@media screen and (max-width: 600px) {
 			overflow: visible;
 		}
+	}
+
+	.owl-carousel .owl-stage-outer {
+		
+
 		.owl-stage {
 			display: flex;
 		}
@@ -351,23 +229,32 @@ body {
 			height: auto;
 			.catalog-item {
 				margin-bottom: 0;
-			}
-
-			.catalog-item-info {
-				margin-bottom: 0;
-			}
-			.catalog-item-price {
-				margin-top: auto;
+				.catalog-item-photo {
+					overflow: hidden;
+					img {
+						max-height: unset;
+						margin-top: 0;
+					}
+				}
+				.catalog-item-info {
+					margin-bottom: 0;
+				}
+				.catalog-item-price {
+					margin-top: auto;
+				}
 			}
 		}
 	}
+
 	#owl-profil, #owl-elements {
 		.catalog-item a, .catalog-item {
 			height: 100%;
 			display: flex;
-			flex-direction: column;			
+			flex-direction: column;
 		}
 	}
+
+
 
 	.footer-mobile {
 		font-family: Roboto;
@@ -429,6 +316,142 @@ body {
 	}
 	
 	@media screen and (max-width: 600px) {
+
+		.mainMenu__mobile {
+			top: 0px;
+			right: 0px;
+			padding: 15px;
+			margin: 0;
+			&.active {
+				background-color: #E1E1E1;
+			}
+			svg {
+				width: 33px;
+				height: 26px;
+			}
+		}
+
+		.header-row .footer-phones {
+			left: 25px;
+			top: 0;
+		}
+
+		.footer-phones-items {
+			align-items: flex-end;
+
+			.header-phone-mobile {
+				font-weight: 900;
+				font-size: 12px;
+				line-height: 12px;
+				text-align: right;
+				color: #1d2021;
+			}
+			.timetable {
+				font-style: normal;
+				font-weight: 300;
+				font-size: 10px;
+				line-height: 14px;
+				text-align: right;
+			}
+		}
+		.header-row {
+			justify-content: flex-start;
+			height: 60px;
+		}
+		.header-logo {
+			top: 0;
+			max-width: 116px;
+			padding-left: 5px;
+		}
+		.index-menu {
+			margin: 0;
+			padding-top: 7px;
+		}
+
+		footer .owl-mobilemain {
+			margin-bottom: 10px;
+		}
+		
+		.owl-mobilemain.owl-carousel {
+			width: 100% !important;
+			max-width: 100%;
+			.owl-nav {
+				display: none;
+			}
+			.p-info-name {
+				font-family: Roboto;
+				font-weight: 900;
+				font-size: 14px;
+				line-height: 16px;
+			}
+			.p-info-text {
+				font-family: Roboto;
+				font-weight: 500;
+				font-size: 12px;
+				line-height: 16px;
+			}
+			
+		}
+
+		.pictures-project>.p-item-info {
+			position: absolute;
+			flex-direction: column;
+			background: #00000096;
+			width: 100%;
+			height: auto !important;
+			bottom: 0;
+			top: auto !important;
+			align-items: end;
+			justify-content: flex-start;
+			padding: 3px 6px 15px 17px !important;
+			box-sizing: border-box;
+			line-height: 30px;
+			display: flex;
+			align-content: flex-start;
+		}
+
+		.catalog-items #owl-profil {
+			margin: 0 auto;
+		}
+		.owl-theme {
+			.owl-nav {
+				--w: 23px;
+				--position: calc((50% - 50vw) + var(--w) / 2 - 16px);
+				.owl-prev, .owl-next { 
+					width: calc(var(--w) + 6px);
+					height: calc(var(--w) * 2);
+					background-color: rgba($color: #C4C4C4, $alpha: 0.8) !important;
+					background-repeat: no-repeat;
+					background-size: 13px 21px;
+				}
+
+				.owl-prev {
+					left: var(--position);
+					border-radius: 0 var(--w) var(--w) 0;
+					background-image: url(../upload/shevron-left.svg) !important;
+					background-position: 8px center !important;
+				}
+				.owl-next {
+					right: var(--position);
+					border-radius: var(--w) 0 0 var(--w);
+					background-image: url(../upload/shevron-right.svg) !important;
+					background-position: calc(100% - 8px) center !important;
+				}
+			}
+		}
+
+		.pokritie_images-mobile {
+			margin: 0 -15px 10px;
+			.owl-carousel.owl-pokritye-mobile {
+				width: 100% !important;
+				max-width: 100%;
+				margin-top: 5px;
+				.owl-item {
+					
+				}
+			}
+		}
+
 		.y-maps {
 			margin-top: 0;
 		}
@@ -442,7 +465,7 @@ body {
 		&__item {
 			transition: all .36s;
 			cursor: pointer;
-			margin-bottom: 3px;			
+			margin-bottom: 3px;
 			&.active .sQuestions__header:before {
 				background-image: url(../upload/chevron-up.svg);
 				height: 8px;
@@ -509,6 +532,7 @@ body {
 		@media screen and (min-width: 600px) {
 			--hh: 116px;
 		}
+
 		max-height: calc(100vh - var(--hh));
 
 		&::before {
@@ -526,12 +550,6 @@ body {
 			display: none;
 		}
 
-		// @media screen and (max-width: 1024px) {
-		// 	width: 375px;
-		// }
-		// @media screen and (max-width: 375px) {
-		// 	width: 100%;
-		// }
 		background-color: #E1E1E1;
 		position: absolute;
 		right: 0;
@@ -566,7 +584,6 @@ body {
 				margin-right: 15px;
 				background-color: #fff;
 			}
-			
 		}
 
 		.location {
@@ -637,4 +654,177 @@ body {
 			height: 190px !important;
 		}
 	}
+
+	@media screen and (max-width: 600px) {
+
+		.download {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin: 0;
+			margin-bottom: 20px;
+			.texosmotr, .price-list {
+				background-position: left;
+				padding: 10px 10px 9px 35px;
+				font-size: 11px;
+			}
+		}
+
+		.owl-pokritye .owl-nav {
+			display: none;
+		}
+
+		.article-text {
+			padding-left: 15px;
+			padding-right: 15px;
+			padding-top: 20px;
+			.strong {
+				font-weight: normal;
+			}
+			
+			span b {
+				font-weight: normal;
+			}
+			h2, b.upper {
+				font-family: Roboto;
+				font-style: normal;
+				font-weight: 500;
+				font-size: 12px;
+				line-height: 16px;
+				margin-top: 0;
+			}
+			// p, span {
+			// 	font-family: Roboto !important;
+			// 	font-style: normal;
+			// 	font-weight: 300 !important;
+			// 	font-size: 12px !important;
+			// 	line-height: 14px !important;			
+			// }
+		}
+
+		.header-block {
+			position: relative;
+			display: flex;
+			align-items: center;
+			height: 74px;
+			padding-left: 14px;
+			padding-right: 14px;
+			margin-bottom: -15px;
+			&::after {
+				content: "";
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 100%;
+				height: 2px;
+				z-index: 5;
+				background: rgba(187, 185, 185, 0.3);
+			}
+			h2 {
+				margin: 0;
+				font-family: Roboto;
+				font-style: normal;
+				font-weight: 900;
+				font-size: 14px;
+				line-height: 16px;
+				text-transform: uppercase;
+				color: #9B8066;
+				text-align: center;
+			}
+			.img-wrap {
+				margin-right: 40px;
+				img {
+					width: 87px;
+					height: 57px;
+				}
+			}
+		}
+		.article-text.content-el {
+			padding-left: 0;
+			padding-right: 0;
+			.element-photo {
+				display: flex !important;
+				padding-top: 15px;
+				.price-list, .texosmotr {
+					font-size: 11px;
+					padding-left: 35px;
+					padding-right: 10px;
+					background-position: 5px center;
+				}
+			}
+
+			.element:nth-child(2) {
+				margin-bottom: 20px;
+			}
+
+			.element:first-child {
+				margin-bottom: 0;
+				padding-bottom: 5px;
+			
+				.element-infos {
+					
+					.element-info {
+						align-items: flex-end;
+						border-bottom: none;
+						margin-bottom: 3px;
+						padding-bottom: 3px;
+						background-color: rgba(187, 185, 185, 0.3);
+						min-height: 21px;
+						.info-name {
+							vertical-align: bottom;
+							p {
+								font-weight: 700;
+								font-size: 12px;
+								line-height: 14px;
+								text-transform: uppercase;
+								padding-left: 30px;
+								
+							}
+						}
+						.info-value {
+							p {
+								font-weight: 300;
+								font-size: 12px;
+								line-height: 14px;
+								padding-left: 10px;
+							}
+						}
+						p {
+							font-family: Roboto;
+							font-style: normal;
+							margin: 0;
+						}
+					}
+				}
+			}
+			.element-photo {
+				display: block;
+				text-align: center;
+				img {
+					margin-bottom: 0;
+					width: 85%;
+				}
+			}
+			.element-infos.zakazat {
+				order: 1;
+				margin-top: 0;
+				height: 47px;
+				margin-bottom: 5px;
+				.zakaz-booton {
+					width: 100%;
+					height: 47px;
+					border-radius: 0;
+					font-family: Roboto;
+					font-style: normal;
+					font-weight: 900;
+					font-size: 14px;
+					line-height: 16px;
+					background-color: #9B8066;
+				}
+			}
+		}
+	}
+
+	
+
 }

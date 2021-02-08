@@ -33,6 +33,16 @@ function eventHandler() {
 			this.classList.toggle('active');
 		});
 	};
+
+	$(".owl-pokritye-mobile--js").owlCarousel({
+		paginationSpeed : 400, 
+		items : 5, 
+		navText:['',''],
+		nav: false,
+		dots:false,
+		loop: true,
+	});
+
 };
 
 if (document.readyState !== 'loading') {
