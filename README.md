@@ -1,5 +1,7 @@
 <!-- https://github.com/MaxSimakov/termo-wood -->
 1. <https://maxsimakov.github.io/termo-wood/.>
+1. <https://maxsimakov.github.io/termo-wood/deking.html>
+1. <https://maxsimakov.github.io/termo-wood/terrasnaya-doska.html>
 1. 
 
 созданы страницы: 
