@@ -642,7 +642,7 @@ body .mainMenu__items-mobile li:not(:last-child)::after {
     left: 0;
     width: 100%;
     height: 2px;
-    z-index: 5;
+    z-index: 4;
     background: rgba(187, 185, 185, 0.3);
   }
   body .header-block h2 {
