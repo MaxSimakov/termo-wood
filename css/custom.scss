@@ -190,8 +190,8 @@ body {
 
 	.owl-dots {
 		position: absolute;
-		bottom: 6px;
-		right: 6px;
+		bottom: 11px;
+    right: 11px;
 		margin-top: 0;
 		z-index: 20;
 		text-align: right;
@@ -227,8 +227,10 @@ body {
 				margin-bottom: 0;
 				.catalog-item-photo {
 					overflow: hidden;
+					align-items: flex-end;
 					img {
-						max-height: unset;
+						height: 155px;
+						max-height: 155px;
 						margin-top: 0;
 					}
 				}
@@ -366,7 +368,7 @@ body {
 		}
 		.index-menu {
 			margin: 0;
-			padding-top: 7px;
+			// padding-top: 7px;
 		}
 
 		footer .owl-mobilemain {
@@ -390,6 +392,7 @@ body {
 				font-weight: 500;
 				font-size: 12px;
 				line-height: 16px;
+				padding-bottom: 5px;
 			}
 			
 		}
@@ -404,7 +407,7 @@ body {
 			top: auto !important;
 			align-items: end;
 			justify-content: flex-start;
-			padding: 3px 6px 15px 17px !important;
+			padding: 7px 19px !important;
 			box-sizing: border-box;
 			line-height: 30px;
 			display: flex;
@@ -456,6 +459,11 @@ body {
 		.y-maps {
 			margin-top: 0;
 		}
+		
+		.question {
+			padding: 0;
+		}
+
 	}
 	.sQuestions {
 		padding: 0;
@@ -476,11 +484,11 @@ body {
 		&__header {
 			font-weight: 900;
 			font-size: 14px;
-			line-height: 17px;
+			line-height: 49px;
 			position: relative;
 			cursor: pointer;
 			text-transform: uppercase;
-			padding: 6px 26px 6px 40px;
+			padding: 0 30px 0 52px;
 			background-color: #F7F7F7;
 			&::before {
 				content: "";
@@ -511,11 +519,11 @@ body {
 
 		&__content {
 			font-weight: 300;
-			font-size: 12px;
-			line-height: 14px;
+			font-size: 14px;
+			line-height: 16px;
 			p {
 				margin: 0;
-				padding: 5px 17px;
+				padding: 5px 17px 15px;
 				text-align: justify;
 			}
 			&:not(.active) {
@@ -711,6 +719,7 @@ body {
 			padding-left: 14px;
 			padding-right: 14px;
 			margin-bottom: -15px;
+			background-color: #9B8066;
 			&::after {
 				content: "";
 				position: absolute;
@@ -729,7 +738,7 @@ body {
 				font-size: 14px;
 				line-height: 16px;
 				text-transform: uppercase;
-				color: #9B8066;
+				color: #fff;
 				text-align: center;
 			}
 			.img-wrap {
@@ -743,6 +752,7 @@ body {
 		.article-text.content-el {
 			padding-left: 0;
 			padding-right: 0;
+			padding-top: 15px;
 			.element-photo {
 				display: flex !important;
 				padding-top: 15px;
@@ -761,16 +771,19 @@ body {
 			.element:first-child {
 				margin-bottom: 0;
 				padding-bottom: 5px;
+				.element-photo {
+					padding-top: 0;
+				}
 			
 				.element-infos {
 					
 					.element-info {
-						align-items: flex-end;
+						align-items: center;
 						border-bottom: none;
 						margin-bottom: 3px;
-						padding-bottom: 3px;
+						// padding-bottom: 5px;
 						background-color: rgba(187, 185, 185, 0.3);
-						min-height: 21px;
+						min-height: 28px;
 						.info-name {
 							vertical-align: bottom;
 							p {
@@ -779,7 +792,6 @@ body {
 								line-height: 14px;
 								text-transform: uppercase;
 								padding-left: 30px;
-								
 							}
 						}
 						.info-value {
