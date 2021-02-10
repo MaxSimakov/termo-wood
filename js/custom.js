@@ -32,7 +32,16 @@ function eventHandler() {
 			document.querySelector('.mainMenu__items').classList.toggle('active');
 			this.classList.toggle('active');
 		});
+		$(document).mouseup(function (e) {
+			var container = $(".mainMenu__items.active");
+			if (container.has(e.target).length === 0) {
+				mobileToggle.classList.remove("active");
+				// $("body").toggleClass("fixed");
+				container.removeClass("active");
+			}
+		});
 	};
+
 
 	$(".owl-pokritye-mobile--js").owlCarousel({
 		paginationSpeed : 400, 

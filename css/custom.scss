@@ -181,7 +181,8 @@ body {
 	}
 
 	.owl-mobilemain .pictures-project {
-		@include block(320px/160px);
+		display: block;
+		height: 180px;
 		img {
 			@include a-cent;
 			object-fit: cover;
@@ -226,12 +227,13 @@ body {
 			.catalog-item {
 				margin-bottom: 0;
 				.catalog-item-photo {
-					overflow: hidden;
+					height: 150px;
 					align-items: flex-end;
 					img {
-						height: 155px;
-						max-height: 155px;
+						// height: 155px;
+						// max-height: 155px;
 						margin-top: 0;
+						max-height: 100%;
 					}
 				}
 				.catalog-item-info {
@@ -322,6 +324,7 @@ body {
 			margin: 0;
 			&.active {
 				background-color: #E1E1E1;
+				pointer-events: none;
 			}
 			svg {
 				width: 33px;
@@ -666,6 +669,10 @@ body {
 
 	@media screen and (max-width: 600px) {
 
+		.content {
+			padding-top: 23px;
+		}
+
 		.download {
 			display: flex;
 			align-items: center;
@@ -715,7 +722,7 @@ body {
 			position: relative;
 			display: flex;
 			align-items: center;
-			height: 74px;
+			height: 48px;
 			padding-left: 14px;
 			padding-right: 14px;
 			margin-bottom: -15px;
@@ -742,10 +749,10 @@ body {
 				text-align: center;
 			}
 			.img-wrap {
-				margin-right: 40px;
+				margin-right: 15px;
 				img {
-					width: 87px;
-					height: 57px;
+					width: 49px;
+					height: 31px;
 				}
 			}
 		}
