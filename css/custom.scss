@@ -182,7 +182,7 @@ body {
 
 	.owl-mobilemain .pictures-project {
 		display: block;
-		height: 180px;
+		height: 220px;
 		img {
 			@include a-cent;
 			object-fit: cover;
@@ -230,8 +230,6 @@ body {
 					height: 150px;
 					align-items: flex-end;
 					img {
-						// height: 155px;
-						// max-height: 155px;
 						margin-top: 0;
 						max-height: 100%;
 					}
@@ -839,7 +837,10 @@ body {
 					font-weight: 900;
 					font-size: 14px;
 					line-height: 16px;
-					background-color: #9B8066;
+					// background-color: #9B8066;
+					border-radius: 23.5px;
+					background: linear-gradient(#fff, #B5A8A0 58%);
+					box-shadow: 0px -1px 3px #B5A8A0;
 				}
 			}
 		}

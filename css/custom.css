@@ -153,7 +153,7 @@ body .header-row .footer-phones-items .timetable {
 }
 body .owl-mobilemain .pictures-project {
   display: block;
-  height: 180px;
+  height: 220px;
 }
 body .owl-mobilemain .pictures-project img {
   position: absolute;
@@ -730,6 +730,8 @@ body .mainMenu__items-mobile li:not(:last-child)::after {
     font-weight: 900;
     font-size: 14px;
     line-height: 16px;
-    background-color: #9B8066;
+    border-radius: 23.5px;
+    background: linear-gradient(#fff, #B5A8A0 58%);
+    box-shadow: 0px -1px 3px #B5A8A0;
   }
 }
