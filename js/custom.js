@@ -36,7 +36,7 @@ function eventHandler() {
 			var container = $(".mainMenu__items.active");
 			if (container.has(e.target).length === 0) {
 				mobileToggle.classList.remove("active");
-				// $("body").toggleClass("fixed");
+				$("body").toggleClass("fixed");
 				container.removeClass("active");
 			}
 		});
